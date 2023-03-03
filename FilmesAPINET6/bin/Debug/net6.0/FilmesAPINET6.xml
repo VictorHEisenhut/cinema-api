@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmesAPINET6</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesAPINET6.Controllers.CinemaController.GetCinemas(System.Nullable{System.Int32})">
+            <summary>
+            Exibe todos o cinemas do banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.CinemaController.GetCinemaById(System.Int32)">
+            <summary>
+            Exibe o cinema correspondente ao seu ID
+            </summary>
+            <param name="id">ID único de um cinema</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.CinemaController.AddCinema(FilmesAPINET6.Data.Dtos.Cinemas.CreateCinemaDto)">
+            <summary>
+            Adiciona um cinema ao banco de dados
+            </summary>
+            <param name="cinemaDto">Objeto com os campos necessários para a criação</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso a inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.CinemaController.UpdateCinema(System.Int32,FilmesAPINET6.Data.Dtos.Cinemas.UpdateCinemaDto)">
+            <summary>
+            Atualiza todos os dados de um cinema
+            </summary>
+            <param name="cinemaDto">Objeto com os campos necessários para a atuaização</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.CinemaController.UpdateCinemaParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesAPINET6.Data.Dtos.Cinemas.UpdateCinemaDto})">
+            <summary>
+            Atualiza os dados de um cinema parcialmente
+            </summary>
+            <param name="patch">Parâmetro utilizado para a atualiação dos campos necessários</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.CinemaController.DeleteCinema(System.Int32)">
+            <summary>
+            Deleta um cinema do banco de dados
+            </summary>
+            <param name="id">ID único presente em todos os cinemas</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a deleção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.EnderecoController.AddEndereco(FilmesAPINET6.Data.Dtos.Enderecos.CreateEnderecoDto)">
+            <summary>
+            Adiciona um endereço ao banco de dados
+            </summary>
+            <param name="enderecoDto">Objeto com os campos necessários para a criação</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso a inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.EnderecoController.GetEnderecos">
+            <summary>
+            Exibe todos o endereços do banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.EnderecoController.GetEnderecoById(System.Int32)">
+            <summary>
+            Exibe o endereço correspondente ao seu ID
+            </summary>
+            <param name="id">ID único de um endereço</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.EnderecoController.UpdateEndereco(System.Int32,FilmesAPINET6.Data.Dtos.Enderecos.UpdateEnderecoDto)">
+            <summary>
+            Atualiza todos os dados de um endereço
+            </summary>
+            <param name="enderecoDto">Objeto com os campos necessários para a atuaização</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.EnderecoController.UpdateEnderecoParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesAPINET6.Data.Dtos.Enderecos.UpdateEnderecoDto})">
+            <summary>
+            Atualiza os dados de um endereço parcialmente
+            </summary>
+            <param name="patch">Parâmetro utilizado para a atualiação dos campos necessários</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.EnderecoController.DeleteEndereco(System.Int32)">
+            <summary>
+            Deleta um endereço do banco de dados
+            </summary>
+            <param name="id">ID único presente em todos os endereços</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a deleção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.FilmeController.AddFilme(FilmesAPINET6.Data.Dtos.Filmes.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para a criação</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso a inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.FilmeController.GetFilmes(System.Int32,System.Int32,System.String)">
+            <summary>
+            Exibe todos o filmes do banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.FilmeController.GetFilmeById(System.Int32)">
+            <summary>
+            Exibe o filme correspondente ao seu ID
+            </summary>
+            <param name="id">ID único de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.FilmeController.UpdateFilme(System.Int32,FilmesAPINET6.Data.Dtos.Filmes.UpdateFilmeDto)">
+            <summary>
+            Atualiza todos os dados de um filme
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para a atuaização</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.FilmeController.UpdateFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesAPINET6.Data.Dtos.Filmes.UpdateFilmeDto})">
+            <summary>
+            Atualiza os dados de um filme parcialmente
+            </summary>
+            <param name="patch">Parâmetro utilizado para a atualiação dos campos necessários</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.FilmeController.DeleteFilme(System.Int32)">
+            <summary>
+            Deleta um filme do banco de dados
+            </summary>
+            <param name="id">ID único presente em todos os filmes</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a deleção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.SessaoController.AddSessao(FilmesAPINET6.Data.Dtos.Sessao.CreateSessaoDto)">
+            <summary>
+            Adiciona uma sessão ao banco de dados
+            </summary>
+            <param name="sessaoDto">Objeto com os campos necessários para a criação</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso a inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.SessaoController.GetSessoes">
+            <summary>
+            Exibe todos as sessões do banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.SessaoController.GetSessaoById(System.Int32,System.Int32)">
+            <summary>
+            Exibe a sessão correspondente aos id's dos filmes e dos cinemas
+            </summary>
+            <param name="filmeID">ID único de um filme</param>
+            <param name="cinemaID">ID único de um cinema</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a exibição seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPINET6.Controllers.SessaoController.DeleteSessao(System.Int32,System.Int32)">
+            <summary>
+            Deleta uma sessão do banco de dados
+            </summary>
+            <param name="filmeID">ID único de um filme</param>
+            <param name="cinemaID">ID único de um cinema</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a deleção seja feita com sucesso</response>
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.CriandoTabelaDeFilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.CriandoTabelaDeFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.CriandoTabelaDeFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.CriandoTabelaDeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.CinemaeEndereço">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.CinemaeEndereço.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.CinemaeEndereço.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.CinemaeEndereço.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.Sessaoefilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Sessaoefilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Sessaoefilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Sessaoefilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.Sessaoecinema">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Sessaoecinema.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Sessaoecinema.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Sessaoecinema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.FilmeIDnulo">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.FilmeIDnulo.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.FilmeIDnulo.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.FilmeIDnulo.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.Cinemaefilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Cinemaefilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Cinemaefilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Cinemaefilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.Confirmacao">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Confirmacao.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Confirmacao.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Confirmacao.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesAPINET6.Migrations.Deleterestrict">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Deleterestrict.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Deleterestrict.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPINET6.Migrations.Deleterestrict.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
