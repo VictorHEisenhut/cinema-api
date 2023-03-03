@@ -1,6 +1,6 @@
 # Cinema-api
 Este foi um projeto básico feito para revisar algumas coisas do que eu aprendi no curso sobre ASP.Net e API's em .Net 6.0\
-Neste projeto foi utilizado a linguagem C#, banco de dados SQL Server, também foi utilizado o Entity Framework para a auxiliação
+Neste projeto foi utilizado a linguagem C#, banco de dados SQL Server, também foi utilizado o Entity Framework para a auxiliação e foi feita toda a documentação do Swagger
 # Função
 Com este projeto é possivel:\
  Criar, editar, deletar e ler endereços;\
